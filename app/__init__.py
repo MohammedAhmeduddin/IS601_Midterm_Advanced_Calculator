@@ -4,7 +4,7 @@ import importlib
 import sys
 from app.commands import CommandHandler, Command
 from app.plugins.menu import MenuCommand
-from dotenv import load_dotenv 
+from dotenv import load_dotenv  # type: ignore
 import logging
 import logging.config
 
