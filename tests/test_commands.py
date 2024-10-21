@@ -5,7 +5,7 @@ Unit tests for various commands within the App, including REPL handling for gree
 
 from unittest.mock import MagicMock
 import sys
-import pytest # type: ignore
+import pytest
 from app.commands import Command, CommandHandler
 from app import App
 from app.plugins.calculator import CalculatorCommand
@@ -14,15 +14,24 @@ from app.plugins.menu import MenuCommand
 
 def test_app_greet_command(capfd: pytest.CaptureFixture[str], monkeypatch: pytest.MonkeyPatch):
     """Test that the REPL correctly handles the 'greet' command."""
-    # Check and verify the correct input number for 'greet' command in your application
-    inputs = iter(['3', 'exit'])  # Assuming '3' is the correct number for greet
+    # Simulate user input for 'greet' command followed by 'exit'
+    # Assuming '3' is the correct number for greet
+    inputs = iter(['3', 'exit'])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
 
     app = App()
-    app.start()
 
+    # Expecting SystemExit when the 'exit' command is used
+    with pytest.raises(SystemExit) as excinfo:
+        app.start()
+
+    # Capture the output and verify that "Hello, World!" is printed
     captured = capfd.readouterr()
     assert "Hello, World!" in captured.out
+
+    # Ensure the application exits cleanly with exit code 0
+    assert excinfo.type == SystemExit
+    assert excinfo.value.code == 0
 
 
 def test_app_menu_command(capfd: pytest.CaptureFixture[str], monkeypatch: pytest.MonkeyPatch):
@@ -31,10 +40,14 @@ def test_app_menu_command(capfd: pytest.CaptureFixture[str], monkeypatch: pytest
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
 
     app = App()
-    app.start()
+
+    # Expecting SystemExit when the 'exit' command is used
+    with pytest.raises(SystemExit):
+        app.start()
 
     captured = capfd.readouterr()
     assert "Available commands:" in captured.out
+
 
 
 class MockAddCommand(Command):
@@ -77,8 +90,7 @@ def test_calculator_execute_operation(capfd: pytest.CaptureFixture[str], monkeyp
     calculator_cmd.execute()
 
     captured = capfd.readouterr()
-    assert "The result is 5.0" in captured.out
-
+    assert "The result of 2.0 + 3.0 is 5.0" in captured.out
 
 class MockCommand(Command):
     """Mock command for general testing."""
