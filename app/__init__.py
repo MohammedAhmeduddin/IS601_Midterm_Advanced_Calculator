@@ -4,9 +4,12 @@ import importlib
 import sys
 from app.commands import CommandHandler, Command
 from app.plugins.menu import MenuCommand
-from dotenv import load_dotenv  # type: ignore
+from dotenv import load_dotenv
 import logging
 import logging.config
+
+# Import the new history commands
+from app.plugins.calculator.history_commands import ShowHistory, ClearHistory, DeleteSpecificRecord
 
 class App:
     def __init__(self):
@@ -46,6 +49,11 @@ class App:
                     self.register_plugin_commands(plugin_module, plugin_name)
                 except ImportError as e:
                     logging.error(f"Error importing plugin {plugin_name}: {e}")
+
+        # Register commands from the history manager
+        #self.command_handler.register_command("show_history", ShowHistory())
+        #self.command_handler.register_command("clear_history", ClearHistory())
+        #self.command_handler.register_command("delete_specific_record", DeleteSpecificRecord())
 
         # Manually register the menu command, as it needs access to all registered commands
         self.command_handler.register_command("menu", MenuCommand(self.command_handler))
@@ -95,5 +103,3 @@ class App:
             sys.exit(0)
         finally:
             logging.info("Application shutdown.")
-
-

@@ -48,8 +48,6 @@ def test_app_menu_command(capfd: pytest.CaptureFixture[str], monkeypatch: pytest
     captured = capfd.readouterr()
     assert "Available commands:" in captured.out
 
-
-
 class MockAddCommand(Command):
     """Mock command for addition operation."""
     def execute(self):
