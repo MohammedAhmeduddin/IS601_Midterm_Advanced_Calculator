@@ -3,10 +3,29 @@ from app.commands import Command
 from app.history_manager import HistoryManager
 
 class Add(Command):
+    """
+    Command to perform an addition operation between two numbers.
+
+    Attributes:
+        history_manager (HistoryManager): Manages the history of calculation records.
+    """
+
     def __init__(self):
+        """
+        Initializes the Add command with a history manager to log the operation's result.
+        """
         self.history_manager = HistoryManager()
 
     def execute(self):
+        """
+        Executes the addition operation by prompting the user for two numbers.
+        
+        Prompts the user to input two numbers, calculates their sum, displays the result,
+        logs the operation, and stores it in the history. Handles invalid input with an error message.
+        
+        Exceptions:
+            ValueError: If the input is not a valid number, an error message is shown.
+        """
         try:
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter second number: "))

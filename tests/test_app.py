@@ -7,7 +7,12 @@ from app import App
 
 
 def test_app_start_invalid_command_name(capfd, monkeypatch):
-    """Test how the REPL handles an unknown string command before exiting."""
+    """
+    Test how the REPL handles an unknown string command before exiting.
+
+    Simulates user inputting an invalid command followed by 'exit' to check if the application 
+    handles unrecognized commands appropriately and exits cleanly.
+    """
     # Simulate user entering an unknown string command followed by 'exit'
     inputs = iter(['unknown_command', 'exit'])
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
@@ -33,7 +38,11 @@ def test_app_start_invalid_command_name(capfd, monkeypatch):
 
 
 def test_app_start_exit_command(capfd, monkeypatch):
-    """Test that the REPL exits correctly when the 'exit' command is entered."""
+    """
+    Test that the REPL exits correctly when the 'exit' command is entered.
+
+    Simulates the user entering 'exit' to ensure the application exits with a SystemExit.
+    """
     # Simulate user entering 'exit'
     monkeypatch.setattr('builtins.input', lambda _: 'exit')
     app = App()
@@ -52,7 +61,12 @@ def test_app_start_exit_command(capfd, monkeypatch):
 
 
 def test_app_get_environment_variable(monkeypatch):
-    """Test retrieving environment variables from the App class."""
+    """
+    Test retrieving environment variables from the App class.
+
+    Verifies that the App class can retrieve environment variables correctly 
+    by monkeypatching the settings dictionary directly.
+    """
     app = App()
 
     # Monkeypatch the settings dictionary directly
@@ -66,8 +80,12 @@ def test_app_get_environment_variable(monkeypatch):
 
 
 def test_app_greet_command(capfd: pytest.CaptureFixture[str], monkeypatch: pytest.MonkeyPatch):
-    """Test that the REPL correctly handles the 'greet' command."""
+    """
+    Test that the REPL correctly handles the 'greet' command.
 
+    Simulates user input to select the 'greet' command and then 'exit',
+    ensuring 'Hello, World!' is printed and the application exits cleanly.
+    """
     # Reusable input simulation for tests
     simulate_inputs(monkeypatch, ['3', 'exit'])
 
@@ -89,7 +107,13 @@ def test_app_greet_command(capfd: pytest.CaptureFixture[str], monkeypatch: pytes
 
 
 def simulate_inputs(monkeypatch, inputs_list):
-    """Helper function to simulate user input in REPL."""
+    """
+    Helper function to simulate user input in REPL.
+
+    Args:
+        monkeypatch (pytest.MonkeyPatch): pytest fixture to mock input.
+        inputs_list (list): List of inputs to simulate in the REPL.
+    """
     inputs = iter(inputs_list)
     monkeypatch.setattr('builtins.input', lambda _: next(inputs))
 

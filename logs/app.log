@@ -5246,3 +5246,417 @@
 2024-10-25 18:21:43,371 - root - INFO - Displaying main menu.
 2024-10-25 18:21:47,208 - root - INFO - Exiting application.
 2024-10-25 18:21:47,209 - root - INFO - Application shutdown.
+2024-10-25 18:42:35,478 - root - INFO - Logging configured.
+2024-10-25 18:42:35,478 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:35,479 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:35,479 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:35,479 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:35,479 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:35,479 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:35,479 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:35,479 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:35,479 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:35,479 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:35,479 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:35,479 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:35,479 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:35,479 - root - INFO - Menu command registered.
+2024-10-25 18:42:35,479 - root - INFO - Displaying main menu.
+2024-10-25 18:42:35,480 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:35,480 - root - ERROR - Non-numeric input received.
+2024-10-25 18:42:35,480 - root - INFO - Exiting application.
+2024-10-25 18:42:35,480 - root - INFO - Application shutdown.
+2024-10-25 18:42:35,482 - root - INFO - Logging configured.
+2024-10-25 18:42:35,483 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:35,483 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:35,483 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:35,483 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:35,483 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:35,483 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:35,483 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:35,483 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:35,483 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:35,483 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:35,483 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:35,483 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:35,483 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:35,483 - root - INFO - Menu command registered.
+2024-10-25 18:42:35,483 - root - INFO - Displaying main menu.
+2024-10-25 18:42:35,484 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:35,484 - root - INFO - Exiting application.
+2024-10-25 18:42:35,484 - root - INFO - Application shutdown.
+2024-10-25 18:42:35,486 - root - INFO - Logging configured.
+2024-10-25 18:42:35,486 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:35,488 - root - INFO - Logging configured.
+2024-10-25 18:42:35,488 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:35,488 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:35,488 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:35,488 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:35,489 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:35,489 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:35,489 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:35,489 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:35,489 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:35,489 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:35,489 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:35,489 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:35,489 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:35,489 - root - INFO - Menu command registered.
+2024-10-25 18:42:35,489 - root - INFO - Displaying main menu.
+2024-10-25 18:42:35,489 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:35,489 - root - INFO - Hello, World!
+2024-10-25 18:42:35,489 - root - INFO - Executed command: greet
+2024-10-25 18:42:35,489 - root - INFO - Displaying main menu.
+2024-10-25 18:42:35,489 - root - INFO - Exiting application.
+2024-10-25 18:42:35,489 - root - INFO - Application shutdown.
+2024-10-25 18:42:35,491 - root - INFO - Adding 5.0 and 3.0: Result = 8.0
+2024-10-25 18:42:35,511 - root - INFO - Dividing 6.0 by 3.0: Result = 2.0
+2024-10-25 18:42:35,516 - root - INFO - Multiplying 5.0 and 3.0: Result = 15.0
+2024-10-25 18:42:35,520 - root - INFO - Subtracting 3.0 from 5.0: Result = 2.0
+2024-10-25 18:42:35,525 - root - INFO - Logging configured.
+2024-10-25 18:42:35,525 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:35,525 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:35,526 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:35,526 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:35,526 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:35,526 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:35,526 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:35,526 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:35,526 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:35,526 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:35,526 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:35,526 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:35,526 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:35,526 - root - INFO - Menu command registered.
+2024-10-25 18:42:35,526 - root - INFO - Displaying main menu.
+2024-10-25 18:42:35,526 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:35,526 - root - INFO - Hello, World!
+2024-10-25 18:42:35,526 - root - INFO - Executed command: greet
+2024-10-25 18:42:35,526 - root - INFO - Displaying main menu.
+2024-10-25 18:42:35,527 - root - INFO - Exiting application.
+2024-10-25 18:42:35,527 - root - INFO - Application shutdown.
+2024-10-25 18:42:35,529 - root - INFO - Logging configured.
+2024-10-25 18:42:35,529 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:35,530 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:35,530 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:35,530 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:35,530 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:35,530 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:35,530 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:35,530 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:35,530 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:35,530 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:35,530 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:35,530 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:35,530 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:35,530 - root - INFO - Menu command registered.
+2024-10-25 18:42:35,530 - root - INFO - Displaying main menu.
+2024-10-25 18:42:35,530 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:35,530 - root - ERROR - Non-numeric input received.
+2024-10-25 18:42:35,531 - root - INFO - Exiting application.
+2024-10-25 18:42:35,531 - root - INFO - Application shutdown.
+2024-10-25 18:42:35,533 - root - INFO - Calculator operations initialized with 2 operations.
+2024-10-25 18:42:35,534 - root - INFO - Exiting calculator menu.
+2024-10-25 18:42:35,536 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:35,537 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:35,537 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:35,538 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:35,538 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:35,539 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:35,539 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:35,540 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:35,540 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:35,541 - root - INFO - Executing operation: Add
+2024-10-25 18:42:35,541 - root - INFO - Adding 2.0 and 3.0: Result = 5.0
+2024-10-25 18:42:35,543 - root - INFO - Exiting calculator menu.
+2024-10-25 18:42:35,546 - root - INFO - User selected to exit the program.
+2024-10-25 18:42:35,547 - root - INFO - User selected command: help
+2024-10-25 18:42:35,550 - root - WARNING - Invalid selection: 999 is out of range.
+2024-10-25 18:42:35,554 - root - INFO - Hello, World!
+2024-10-25 18:42:35,598 - root - INFO - User selected to exit the program.
+2024-10-25 18:42:35,599 - root - INFO - System exit initiated.
+2024-10-25 18:42:35,601 - root - INFO - User selected command: greet
+2024-10-25 18:42:35,603 - root - INFO - User selected to exit the program.
+2024-10-25 18:42:35,604 - root - INFO - System exit initiated.
+2024-10-25 18:42:35,606 - root - WARNING - Invalid input: non-numeric selection entered.
+2024-10-25 18:42:35,607 - root - WARNING - Invalid selection: 3 is out of range.
+2024-10-25 18:42:35,609 - root - INFO - User selected command: greet
+2024-10-25 18:42:35,609 - root - ERROR - KeyError: Command 'greet' could not be executed.
+2024-10-25 18:42:35,611 - root - INFO - User selected command: greet
+2024-10-25 18:42:35,612 - root - ERROR - Unexpected error occurred: Unexpected error
+2024-10-25 18:42:44,232 - root - INFO - Logging configured.
+2024-10-25 18:42:44,232 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:44,233 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:44,233 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:44,233 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:44,233 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:44,233 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:44,233 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:44,233 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:44,233 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:44,233 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:44,233 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:44,233 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:44,233 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:44,234 - root - INFO - Menu command registered.
+2024-10-25 18:42:44,234 - root - INFO - Displaying main menu.
+2024-10-25 18:42:44,234 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:44,234 - root - ERROR - Non-numeric input received.
+2024-10-25 18:42:44,234 - root - INFO - Exiting application.
+2024-10-25 18:42:44,234 - root - INFO - Application shutdown.
+2024-10-25 18:42:44,236 - root - INFO - Logging configured.
+2024-10-25 18:42:44,237 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:44,237 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:44,237 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:44,237 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:44,237 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:44,237 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:44,237 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:44,237 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:44,237 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:44,237 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:44,237 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:44,237 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:44,238 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:44,238 - root - INFO - Menu command registered.
+2024-10-25 18:42:44,238 - root - INFO - Displaying main menu.
+2024-10-25 18:42:44,238 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:44,238 - root - INFO - Exiting application.
+2024-10-25 18:42:44,238 - root - INFO - Application shutdown.
+2024-10-25 18:42:44,240 - root - INFO - Logging configured.
+2024-10-25 18:42:44,240 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:44,242 - root - INFO - Logging configured.
+2024-10-25 18:42:44,242 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:44,243 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:44,243 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:44,243 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:44,243 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:44,243 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:44,243 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:44,243 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:44,243 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:44,243 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:44,243 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:44,243 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:44,243 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:44,243 - root - INFO - Menu command registered.
+2024-10-25 18:42:44,243 - root - INFO - Displaying main menu.
+2024-10-25 18:42:44,244 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:44,244 - root - INFO - Hello, World!
+2024-10-25 18:42:44,244 - root - INFO - Executed command: greet
+2024-10-25 18:42:44,244 - root - INFO - Displaying main menu.
+2024-10-25 18:42:44,244 - root - INFO - Exiting application.
+2024-10-25 18:42:44,244 - root - INFO - Application shutdown.
+2024-10-25 18:42:44,247 - root - INFO - Adding 5.0 and 3.0: Result = 8.0
+2024-10-25 18:42:44,258 - root - INFO - Dividing 6.0 by 3.0: Result = 2.0
+2024-10-25 18:42:44,261 - root - INFO - Multiplying 5.0 and 3.0: Result = 15.0
+2024-10-25 18:42:44,266 - root - INFO - Subtracting 3.0 from 5.0: Result = 2.0
+2024-10-25 18:42:44,272 - root - INFO - Logging configured.
+2024-10-25 18:42:44,272 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:44,272 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:44,272 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:44,272 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:44,273 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:44,273 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:44,273 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:44,273 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:44,273 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:44,273 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:44,273 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:44,273 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:44,273 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:44,274 - root - INFO - Menu command registered.
+2024-10-25 18:42:44,274 - root - INFO - Displaying main menu.
+2024-10-25 18:42:44,274 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:44,274 - root - INFO - Hello, World!
+2024-10-25 18:42:44,274 - root - INFO - Executed command: greet
+2024-10-25 18:42:44,274 - root - INFO - Displaying main menu.
+2024-10-25 18:42:44,274 - root - INFO - Exiting application.
+2024-10-25 18:42:44,274 - root - INFO - Application shutdown.
+2024-10-25 18:42:44,277 - root - INFO - Logging configured.
+2024-10-25 18:42:44,277 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:44,277 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:44,277 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:44,277 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:44,277 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:44,277 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:44,277 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:44,277 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:44,277 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:44,277 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:44,277 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:44,278 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:44,278 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:44,278 - root - INFO - Menu command registered.
+2024-10-25 18:42:44,278 - root - INFO - Displaying main menu.
+2024-10-25 18:42:44,278 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:44,278 - root - ERROR - Non-numeric input received.
+2024-10-25 18:42:44,278 - root - INFO - Exiting application.
+2024-10-25 18:42:44,278 - root - INFO - Application shutdown.
+2024-10-25 18:42:44,280 - root - INFO - Calculator operations initialized with 2 operations.
+2024-10-25 18:42:44,281 - root - INFO - Exiting calculator menu.
+2024-10-25 18:42:44,283 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:44,284 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:44,284 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:44,285 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:44,285 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:44,286 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:44,286 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:44,287 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:44,287 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:44,288 - root - INFO - Executing operation: Add
+2024-10-25 18:42:44,288 - root - INFO - Adding 2.0 and 3.0: Result = 5.0
+2024-10-25 18:42:44,290 - root - INFO - Exiting calculator menu.
+2024-10-25 18:42:44,293 - root - INFO - User selected to exit the program.
+2024-10-25 18:42:44,294 - root - INFO - User selected command: help
+2024-10-25 18:42:44,296 - root - WARNING - Invalid selection: 999 is out of range.
+2024-10-25 18:42:44,300 - root - INFO - Hello, World!
+2024-10-25 18:42:44,340 - root - INFO - User selected to exit the program.
+2024-10-25 18:42:44,341 - root - INFO - System exit initiated.
+2024-10-25 18:42:44,343 - root - INFO - User selected command: greet
+2024-10-25 18:42:44,344 - root - INFO - User selected to exit the program.
+2024-10-25 18:42:44,345 - root - INFO - System exit initiated.
+2024-10-25 18:42:44,347 - root - WARNING - Invalid input: non-numeric selection entered.
+2024-10-25 18:42:44,348 - root - WARNING - Invalid selection: 3 is out of range.
+2024-10-25 18:42:44,350 - root - INFO - User selected command: greet
+2024-10-25 18:42:44,350 - root - ERROR - KeyError: Command 'greet' could not be executed.
+2024-10-25 18:42:44,351 - root - INFO - User selected command: greet
+2024-10-25 18:42:44,352 - root - ERROR - Unexpected error occurred: Unexpected error
+2024-10-25 18:42:54,413 - root - INFO - Logging configured.
+2024-10-25 18:42:54,414 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:54,414 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:54,415 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:54,415 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:54,415 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:54,415 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:54,415 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:54,415 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:54,415 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:54,415 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:54,415 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:54,415 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:54,415 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:54,416 - root - INFO - Menu command registered.
+2024-10-25 18:42:54,416 - root - INFO - Displaying main menu.
+2024-10-25 18:42:54,416 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:54,416 - root - ERROR - Non-numeric input received.
+2024-10-25 18:42:54,416 - root - INFO - Exiting application.
+2024-10-25 18:42:54,416 - root - INFO - Application shutdown.
+2024-10-25 18:42:54,420 - root - INFO - Logging configured.
+2024-10-25 18:42:54,420 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:54,421 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:54,421 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:54,421 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:54,421 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:54,421 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:54,421 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:54,421 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:54,421 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:54,421 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:54,422 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:54,422 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:54,422 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:54,422 - root - INFO - Menu command registered.
+2024-10-25 18:42:54,422 - root - INFO - Displaying main menu.
+2024-10-25 18:42:54,422 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:54,422 - root - INFO - Exiting application.
+2024-10-25 18:42:54,422 - root - INFO - Application shutdown.
+2024-10-25 18:42:54,425 - root - INFO - Logging configured.
+2024-10-25 18:42:54,426 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:54,429 - root - INFO - Logging configured.
+2024-10-25 18:42:54,429 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:54,429 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:54,430 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:54,430 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:54,430 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:54,430 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:54,430 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:54,430 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:54,430 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:54,430 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:54,430 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:54,430 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:54,430 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:54,431 - root - INFO - Menu command registered.
+2024-10-25 18:42:54,431 - root - INFO - Displaying main menu.
+2024-10-25 18:42:54,431 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:54,431 - root - INFO - Hello, World!
+2024-10-25 18:42:54,431 - root - INFO - Executed command: greet
+2024-10-25 18:42:54,431 - root - INFO - Displaying main menu.
+2024-10-25 18:42:54,431 - root - INFO - Exiting application.
+2024-10-25 18:42:54,431 - root - INFO - Application shutdown.
+2024-10-25 18:42:54,435 - root - INFO - Adding 5.0 and 3.0: Result = 8.0
+2024-10-25 18:42:54,448 - root - INFO - Dividing 6.0 by 3.0: Result = 2.0
+2024-10-25 18:42:54,454 - root - INFO - Multiplying 5.0 and 3.0: Result = 15.0
+2024-10-25 18:42:54,460 - root - INFO - Subtracting 3.0 from 5.0: Result = 2.0
+2024-10-25 18:42:54,468 - root - INFO - Logging configured.
+2024-10-25 18:42:54,469 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:54,469 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:54,469 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:54,470 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:54,470 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:54,470 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:54,470 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:54,470 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:54,470 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:54,470 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:54,470 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:54,470 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:54,470 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:54,470 - root - INFO - Menu command registered.
+2024-10-25 18:42:54,471 - root - INFO - Displaying main menu.
+2024-10-25 18:42:54,471 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:54,471 - root - INFO - Hello, World!
+2024-10-25 18:42:54,471 - root - INFO - Executed command: greet
+2024-10-25 18:42:54,471 - root - INFO - Displaying main menu.
+2024-10-25 18:42:54,471 - root - INFO - Exiting application.
+2024-10-25 18:42:54,471 - root - INFO - Application shutdown.
+2024-10-25 18:42:54,475 - root - INFO - Logging configured.
+2024-10-25 18:42:54,476 - root - INFO - Environment variables loaded.
+2024-10-25 18:42:54,476 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:54,476 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:54,476 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:54,476 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:54,477 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:54,477 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:54,477 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:54,477 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:54,477 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:54,477 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 18:42:54,477 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 18:42:54,477 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 18:42:54,477 - root - INFO - Menu command registered.
+2024-10-25 18:42:54,477 - root - INFO - Displaying main menu.
+2024-10-25 18:42:54,477 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 18:42:54,477 - root - ERROR - Non-numeric input received.
+2024-10-25 18:42:54,478 - root - INFO - Exiting application.
+2024-10-25 18:42:54,478 - root - INFO - Application shutdown.
+2024-10-25 18:42:54,480 - root - INFO - Calculator operations initialized with 2 operations.
+2024-10-25 18:42:54,482 - root - INFO - Exiting calculator menu.
+2024-10-25 18:42:54,485 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 18:42:54,486 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 18:42:54,486 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 18:42:54,487 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 18:42:54,488 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 18:42:54,489 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 18:42:54,489 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 18:42:54,490 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 18:42:54,491 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 18:42:54,491 - root - INFO - Executing operation: Add
+2024-10-25 18:42:54,492 - root - INFO - Adding 2.0 and 3.0: Result = 5.0
+2024-10-25 18:42:54,495 - root - INFO - Exiting calculator menu.
+2024-10-25 18:42:54,499 - root - INFO - User selected to exit the program.
+2024-10-25 18:42:54,500 - root - INFO - User selected command: help
+2024-10-25 18:42:54,504 - root - WARNING - Invalid selection: 999 is out of range.
+2024-10-25 18:42:54,510 - root - INFO - Hello, World!
+2024-10-25 18:42:54,569 - root - INFO - User selected to exit the program.
+2024-10-25 18:42:54,570 - root - INFO - System exit initiated.
+2024-10-25 18:42:54,574 - root - INFO - User selected command: greet
+2024-10-25 18:42:54,578 - root - INFO - User selected to exit the program.
+2024-10-25 18:42:54,579 - root - INFO - System exit initiated.
+2024-10-25 18:42:54,582 - root - WARNING - Invalid input: non-numeric selection entered.
+2024-10-25 18:42:54,585 - root - WARNING - Invalid selection: 3 is out of range.
+2024-10-25 18:42:54,589 - root - INFO - User selected command: greet
+2024-10-25 18:42:54,590 - root - ERROR - KeyError: Command 'greet' could not be executed.
+2024-10-25 18:42:54,593 - root - INFO - User selected command: greet
+2024-10-25 18:42:54,594 - root - ERROR - Unexpected error occurred: Unexpected error

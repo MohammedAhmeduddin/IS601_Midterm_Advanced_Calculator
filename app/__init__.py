@@ -12,7 +12,20 @@ import logging.config
 from app.plugins.calculator.history_commands import ShowHistory, ClearHistory, DeleteSpecificRecord
 
 class App:
+    """
+    Main application class that manages configuration, environment settings, command loading, 
+    and the main interactive loop.
+
+    Attributes:
+        settings (dict): A dictionary of environment variables.
+        command_handler (CommandHandler): Handles registration and execution of commands.
+    """
+
     def __init__(self):
+        """
+        Initializes the App instance, sets up logging, loads environment variables, 
+        and initializes the command handler.
+        """
         os.makedirs('logs', exist_ok=True)
         self.configure_logging()
         load_dotenv()
@@ -21,6 +34,10 @@ class App:
         self.command_handler = CommandHandler()
 
     def configure_logging(self):
+        """
+        Configures logging for the application based on a logging configuration file.
+        If the file is not found, a default logging configuration is used.
+        """
         logging_conf_path = 'logging.conf'
         if os.path.exists(logging_conf_path):
             logging.config.fileConfig(logging_conf_path, disable_existing_loggers=False)
@@ -29,14 +46,35 @@ class App:
         logging.info("Logging configured.")
 
     def load_environment_variables(self):
+        """
+        Loads environment variables from a .env file and returns them as a dictionary.
+
+        Returns:
+            dict: A dictionary of environment variables.
+        """
         settings = {key: value for key, value in os.environ.items()}
         logging.info("Environment variables loaded.")
         return settings
 
     def get_environment_variable(self, env_var: str = 'ENVIRONMENT'):
+        """
+        Retrieves a specific environment variable from the settings dictionary.
+
+        Args:
+            env_var (str): The name of the environment variable to retrieve.
+
+        Returns:
+            str or None: The value of the environment variable, or None if it does not exist.
+        """
         return self.settings.get(env_var, None)
 
     def load_plugins(self):
+        """
+        Dynamically loads and registers command plugins from the specified plugins directory.
+        
+        This method iterates over plugins, importing each and registering their commands. It 
+        also registers specific history commands and a menu command for user interaction.
+        """
         plugins_package = 'app.plugins'
         plugins_path = plugins_package.replace('.', '/')
         if not os.path.exists(plugins_path):
@@ -50,16 +88,18 @@ class App:
                 except ImportError as e:
                     logging.error(f"Error importing plugin {plugin_name}: {e}")
 
-        # Register commands from the history manager
-        #self.command_handler.register_command("show_history", ShowHistory())
-        #self.command_handler.register_command("clear_history", ClearHistory())
-        #self.command_handler.register_command("delete_specific_record", DeleteSpecificRecord())
-
         # Manually register the menu command, as it needs access to all registered commands
         self.command_handler.register_command("menu", MenuCommand(self.command_handler))
         logging.info("Menu command registered.")
 
     def register_plugin_commands(self, plugin_module, plugin_name):
+        """
+        Registers all command classes from a plugin module with the command handler.
+
+        Args:
+            plugin_module (module): The module containing the command classes.
+            plugin_name (str): The name of the plugin module.
+        """
         for item_name in dir(plugin_module):
             item = getattr(plugin_module, item_name)
             if isinstance(item, type) and issubclass(item, Command) and item is not Command:
@@ -67,12 +107,25 @@ class App:
                 logging.info(f"Command '{plugin_name}' from plugin '{plugin_name}' registered.")
 
     def print_main_menu(self):
+        """
+        Prints the main menu, listing all available commands for user selection.
+        """
         logging.info("Displaying main menu.")
         print("\nAvailable commands:")
         self.command_handler.list_commands()
         print("Type the number of the command to execute, or type 'exit' to exit.")
 
     def start(self):
+        """
+        Starts the application, loading plugins, displaying the main menu, and entering the 
+        main interactive loop to handle user input for command selection.
+
+        The loop allows users to select commands by number, handles invalid input, 
+        and exits gracefully on 'exit' or keyboard interruption.
+        
+        Raises:
+            SystemExit: If the user chooses to exit the application.
+        """
         self.load_plugins()
         self.print_main_menu()
         logging.info("Application started. Type 'exit' to exit.")

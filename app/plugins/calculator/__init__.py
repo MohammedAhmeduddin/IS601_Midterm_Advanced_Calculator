@@ -6,14 +6,32 @@ import logging
 from app.commands import Command
 
 class CalculatorCommand(Command):
+    """
+    The CalculatorCommand class dynamically loads and manages calculator operations as plugins.
+    
+    Attributes:
+        plugins_package (str): The package where calculator operation plugins are stored.
+        operations (dict): A dictionary mapping operation indices to Command instances.
+    """
+
     def __init__(self, plugins_package='app.plugins.calculator'):
-        """Initialize the calculator by dynamically loading operations from the specified plugins package."""
+        """
+        Initialize the calculator by dynamically loading operations from the specified plugins package.
+
+        Args:
+            plugins_package (str): The package path where plugin modules for operations are located.
+        """
         self.plugins_package = plugins_package
         self.operations = self.load_operations()
         logging.info(f"Calculator operations initialized with {len(self.operations)} operations.")
 
     def load_operations(self):
-        """Dynamically loads available calculator operation plugins."""
+        """
+        Dynamically loads available calculator operation plugins from the plugins package.
+
+        Returns:
+            dict: A dictionary mapping operation indices to Command instances.
+        """
         operations = {}
         plugin_paths = [self.plugins_package.replace('.', '/')]
         found_plugins = pkgutil.iter_modules(plugin_paths)
@@ -37,9 +55,20 @@ class CalculatorCommand(Command):
 
         logging.info(f"Loaded operations: {list(operations.keys())}")
         return operations
-   
+
     def register_operations(self, plugin_module, name, index, operations):
-        """Registers operations from a plugin module."""
+        """
+        Registers operations from a plugin module.
+
+        Args:
+            plugin_module (module): The module containing the operation class.
+            name (str): The name of the module.
+            index (int): The current index to assign to the operation.
+            operations (dict): The dictionary to store the operations.
+
+        Returns:
+            int: The updated index after registering the operations in the module.
+        """
         try:
             for attribute_name in dir(plugin_module):
                 attribute = getattr(plugin_module, attribute_name)
@@ -53,7 +82,9 @@ class CalculatorCommand(Command):
         return index  # Return the updated index
 
     def display_menu(self):
-        """Displays the list of available calculator operations."""
+        """
+        Displays the list of available calculator operations in a user-friendly menu format.
+        """
         print("\nCalculator Operations:")
         # Ensure menu items are displayed in order
         for key in sorted(self.operations.keys(), key=int):
@@ -61,7 +92,13 @@ class CalculatorCommand(Command):
         print("0. Back")
 
     def execute(self):
-        """Executes the calculator command, prompting user for operation selection."""
+        """
+        Executes the calculator command, presenting a menu to the user for operation selection.
+        
+        Prompts the user to select an operation, executes the selected operation, 
+        or exits to the main menu if '0' is selected. Logs each operation execution 
+        and handles potential errors.
+        """
         while True:
             self.display_menu()
 

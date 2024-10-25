@@ -1,4 +1,6 @@
-"""Unit tests for the Calculator plugin commands."""
+"""
+Unit tests for the Calculator plugin commands.
+"""
 
 import unittest
 from unittest.mock import patch
@@ -9,12 +11,22 @@ from app.plugins.calculator.divide import Divide
 
 
 class TestCalculatorCommands(unittest.TestCase):
-    """Tests for calculator command functionalities."""
+    """
+    Tests for calculator command functionalities.
+
+    This class contains unit tests for each arithmetic command, verifying that the commands
+    correctly execute addition, subtraction, multiplication, and division operations.
+    """
 
     @patch('builtins.input', side_effect=[5, 3])
     @patch('builtins.print')
     def test_add(self, mock_print, mock_input):
-        """Test addition operation."""
+        """
+        Test addition operation.
+
+        Mocks user input for two numbers, executes the Add command, and verifies that the output
+        is as expected.
+        """
         # Instantiate the Add command
         add_command = Add()
         # Execute the command
@@ -25,7 +37,12 @@ class TestCalculatorCommands(unittest.TestCase):
     @patch('builtins.input', side_effect=[5, 3])
     @patch('builtins.print')
     def test_subtract(self, mock_print, mock_input):
-        """Test subtraction operation."""
+        """
+        Test subtraction operation.
+
+        Mocks user input for two numbers, executes the Subtract command, and verifies that the output
+        is as expected.
+        """
         # Instantiate the Subtract command
         subtract_command = Subtract()
         # Execute the command
@@ -36,7 +53,12 @@ class TestCalculatorCommands(unittest.TestCase):
     @patch('builtins.input', side_effect=[5, 3])
     @patch('builtins.print')
     def test_multiply(self, mock_print, mock_input):
-        """Test multiplication operation."""
+        """
+        Test multiplication operation.
+
+        Mocks user input for two numbers, executes the Multiply command, and verifies that the output
+        is as expected.
+        """
         # Instantiate the Multiply command
         multiply_command = Multiply()
         # Execute the command
@@ -47,7 +69,12 @@ class TestCalculatorCommands(unittest.TestCase):
     @patch('builtins.input', side_effect=[6, 3])
     @patch('builtins.print')
     def test_divide(self, mock_print, mock_input):
-        """Test division operation."""
+        """
+        Test division operation.
+
+        Mocks user input for two numbers, executes the Divide command, and verifies that the output
+        is as expected.
+        """
         # Instantiate the Divide command
         divide_command = Divide()
         # Execute the command
