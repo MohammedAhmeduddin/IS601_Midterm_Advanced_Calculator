@@ -22,11 +22,9 @@ class Add(Command):
         
         Prompts the user to input two numbers, calculates their sum, displays the result,
         logs the operation, and stores it in the history. Handles invalid input with an error message.
-        
-        Exceptions:
-            ValueError: If the input is not a valid number, an error message is shown.
         """
         try:
+            # EAFP: Assume inputs are valid and try converting directly
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter second number: "))
             result = num1 + num2
@@ -35,5 +33,7 @@ class Add(Command):
             # Store the result in history
             self.history_manager.add_record("Add", num1, num2, result)
         except ValueError as e:
+            # Handle case where inputs are not valid numbers
             logging.error(f"Invalid input for addition: {e}")
             print("Error: Please enter valid numbers.")
+

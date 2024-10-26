@@ -12,5 +12,14 @@ class GreetCommand(Command):
         """
         Executes the greet command, logging and displaying a greeting message.
         """
-        logging.info("Hello, World!")
-        print("Hello, World!")
+        try:
+            # EAFP: Assume logging will succeed, handle unexpected issues
+            logging.info("Hello, World!")
+        except Exception as e:
+            logging.error(f"Failed to log greeting message: {e}")
+
+        try:
+            # EAFP: Assume print will succeed, handle unexpected issues
+            print("Hello, World!")
+        except Exception as e:
+            logging.error(f"Failed to print greeting message: {e}")

@@ -22,11 +22,9 @@ class Multiply(Command):
 
         Prompts the user to input two numbers, calculates their product, displays the result,
         logs the operation, and stores it in the history. Handles invalid input with an error message.
-
-        Raises:
-            ValueError: If the input is not a valid number.
         """
         try:
+            # EAFP: Assume inputs are valid floats and proceed with multiplication
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter second number: "))
             result = num1 * num2
@@ -35,5 +33,6 @@ class Multiply(Command):
             # Store the result in history
             self.history_manager.add_record("Multiply", num1, num2, result)
         except ValueError as e:
+            # Handle cases where inputs are not valid numbers
             logging.error(f"Invalid input for multiplication: {e}")
             print("Error: Please enter valid numbers.")

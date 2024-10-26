@@ -22,11 +22,9 @@ class Subtract(Command):
 
         Prompts the user to input two numbers, calculates their difference, displays the result,
         logs the operation, and stores it in the history. Handles invalid input with an error message.
-
-        Raises:
-            ValueError: If the input is not a valid number.
         """
         try:
+            # EAFP: Assume inputs are valid numbers and proceed with subtraction
             num1 = float(input("Enter first number: "))
             num2 = float(input("Enter second number: "))
             result = num1 - num2
@@ -35,5 +33,6 @@ class Subtract(Command):
             # Store the result in history
             self.history_manager.add_record("Subtract", num1, num2, result)
         except ValueError as e:
+            # Handle invalid input where conversion to float fails
             logging.error(f"Invalid input for subtraction: {e}")
             print("Error: Please enter valid numbers.")
