@@ -550,3 +550,33 @@
 2024-10-25 19:45:26,470 - root - ERROR - KeyError: Command 'greet' could not be executed.
 2024-10-25 19:45:26,473 - root - INFO - User selected command: greet
 2024-10-25 19:45:26,474 - root - ERROR - Unexpected error occurred: Unexpected error
+2024-10-25 20:03:48,787 - root - INFO - Logging configured.
+2024-10-25 20:03:48,788 - root - INFO - Environment variables loaded.
+2024-10-25 20:03:48,788 - root - INFO - Registered operation: add as Add with index 1
+2024-10-25 20:03:48,789 - root - INFO - Registered operation: divide as Divide with index 2
+2024-10-25 20:03:48,789 - root - INFO - Registered operation: history_commands as ClearHistory with index 3
+2024-10-25 20:03:48,789 - root - INFO - Registered operation: history_commands as DeleteSpecificRecord with index 4
+2024-10-25 20:03:48,789 - root - INFO - Registered operation: history_commands as ShowHistory with index 5
+2024-10-25 20:03:48,789 - root - INFO - Registered operation: multiply as Multiply with index 6
+2024-10-25 20:03:48,789 - root - INFO - Registered operation: subtract as Subtract with index 7
+2024-10-25 20:03:48,789 - root - INFO - Loaded operations: ['1', '2', '3', '4', '5', '6', '7']
+2024-10-25 20:03:48,790 - root - INFO - Calculator operations initialized with 7 operations.
+2024-10-25 20:03:48,790 - root - INFO - Command 'calculator' from plugin 'calculator' registered.
+2024-10-25 20:03:48,790 - root - INFO - Command 'exit' from plugin 'exit' registered.
+2024-10-25 20:03:48,790 - root - INFO - Command 'greet' from plugin 'greet' registered.
+2024-10-25 20:03:48,790 - root - INFO - Menu command registered.
+2024-10-25 20:03:48,790 - root - INFO - Displaying main menu.
+2024-10-25 20:03:48,790 - root - INFO - Application started. Type 'exit' to exit.
+2024-10-25 20:03:53,738 - root - INFO - Executing operation: Add
+2024-10-25 20:03:58,607 - root - INFO - Adding 22222.0 and 22222.0: Result = 44444.0
+2024-10-25 20:04:15,214 - root - INFO - Executing operation: Divide
+2024-10-25 20:04:21,415 - root - INFO - Dividing 6666666.0 by 3.0: Result = 2222222.0
+2024-10-25 20:04:26,844 - root - INFO - Executing operation: Multiply
+2024-10-25 20:04:33,854 - root - INFO - Multiplying 7777777.0 and 2.0: Result = 15555554.0
+2024-10-25 20:04:37,824 - root - INFO - Executing operation: Subtract
+2024-10-25 20:04:47,408 - root - INFO - Subtracting 44444444.0 from 888888888.0: Result = 844444444.0
+2024-10-25 20:05:09,357 - root - INFO - Exiting calculator menu.
+2024-10-25 20:05:09,358 - root - INFO - Executed command: calculator
+2024-10-25 20:05:09,359 - root - INFO - Displaying main menu.
+2024-10-25 20:05:18,364 - root - INFO - Exiting application.
+2024-10-25 20:05:18,365 - root - INFO - Application shutdown.
